@@ -1,0 +1,10 @@
+s=input().strip()
+bal=0
+ans=0
+for c in s:
+    if c=='(':
+        bal+=1
+    elif bal>0:
+        bal-=1
+        ans+=2
+print(ans)
